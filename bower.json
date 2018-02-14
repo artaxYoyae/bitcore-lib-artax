@@ -1,17 +1,17 @@
 {
-  "name": "bitcore-lib-dash",
-  "main": "./bitcore-lib-dash.min.js",
+  "name": "bitcore-lib-artax",
+  "main": "./bitcore-lib-artax.min.js",
   "version": "0.15.2",
-  "homepage": "https://github.com/dashevo/bitcore-lib-dash",
+  "homepage": "https://github.com/yoyaeArtax/bitcore-lib-artax",
   "authors": [
-    "Dash", "BitPay, Inc."
+    "Artax", "BitPay, Inc."
   ],
-  "description": "A pure, powerful core for your dash project.",
+  "description": "A pure, powerful core for your artax project.",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "dash",
+    "artax",
     "bitcoin",
     "bitcore",
     "btc",

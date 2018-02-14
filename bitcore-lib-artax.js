@@ -5049,12 +5049,12 @@ addNetwork({
   xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
   xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
   networkMagic: 0xbf0c6bbd,
-  port: 9999,
+  port: 21526,
   dnsSeeds: [
     'dnsseed.darkcoin.io',
     'dnsseed.dashdot.io',
     'dnsseed.masternode.io',
-    'dnsseed.dashpay.io'
+    'dnsseed.yoyaeArtax.io'
   ]
 });
 
@@ -11380,7 +11380,7 @@ var Unit = require('./unit');
  * @example
  * ```javascript
  *
- * var uri = new URI('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6?amount=1.2');
+ * var uri = new URI('artax:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6?amount=1.2');
  * console.log(uri.address, uri.amount);
  * ```
  *
@@ -11443,7 +11443,7 @@ URI.fromObject = function fromObject(json) {
  * @example
  * ```javascript
  *
- * var valid = URI.isValid('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6');
+ * var valid = URI.isValid('artax:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6');
  * // true
  * ```
  *
@@ -11470,8 +11470,8 @@ URI.isValid = function(arg, knownParams) {
 URI.parse = function(uri) {
   var info = URL.parse(uri, true);
 
-  if (info.protocol !== 'dash:') {
-    throw new TypeError('Invalid dash URI');
+  if (info.protocol !== 'artax:') {
+    throw new TypeError('Invalid artax URI');
   }
 
   // workaround to host insensitiveness
@@ -11495,7 +11495,7 @@ URI.prototype._fromObject = function(obj) {
   /* jshint maxcomplexity: 10 */
 
   if (!Address.isValid(obj.address)) {
-    throw new TypeError('Invalid dash address');
+    throw new TypeError('Invalid artax address');
   }
 
   this.address = new Address(obj.address);
@@ -11565,7 +11565,7 @@ URI.prototype.toString = function() {
   _.extend(query, this.extras);
 
   return URL.format({
-    protocol: 'dash:',
+    protocol: 'artax:',
     host: this.address,
     query: query
   });
@@ -25931,7 +25931,7 @@ module.exports={
   "_args": [
     [
       "elliptic@6.4.0",
-      "/Users/awerner/GitHub/dashevo/bitcore-lib-dash"
+      "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax"
     ]
   ],
   "_development": true,
@@ -25956,7 +25956,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_spec": "6.4.0",
-  "_where": "/Users/awerner/GitHub/dashevo/bitcore-lib-dash",
+  "_where": "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -28300,7 +28300,7 @@ module.exports={
   "_args": [
     [
       "elliptic@6.4.0",
-      "/Users/awerner/GitHub/dashevo/bitcore-lib-dash"
+      "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax"
     ]
   ],
   "_development": true,
@@ -28325,7 +28325,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_spec": "6.4.0",
-  "_where": "/Users/awerner/GitHub/dashevo/bitcore-lib-dash",
+  "_where": "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -32466,7 +32466,7 @@ module.exports={
   "_args": [
     [
       "elliptic@3.0.3",
-      "/Users/awerner/GitHub/dashevo/bitcore-lib-dash"
+      "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax"
     ]
   ],
   "_from": "elliptic@3.0.3",
@@ -32490,7 +32490,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-3.0.3.tgz",
   "_spec": "3.0.3",
-  "_where": "/Users/awerner/GitHub/dashevo/bitcore-lib-dash",
+  "_where": "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -60526,7 +60526,7 @@ module.exports.AES_ROUND_NOKEY_LE = function(X, Y) {
 ///////////////  Blake //////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -60752,7 +60752,7 @@ module.exports = function(input, format, output) {
 //////////////  BMW /////////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -61110,7 +61110,7 @@ module.exports = function(input, format, output) {
 ////////////  Cubehash //////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -61442,7 +61442,7 @@ module.exports = function(input, format, output) {
 ///////////////  Echo ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -61729,7 +61729,7 @@ module.exports = function(input, format, output) {
 ////////////  groestl ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -63151,7 +63151,7 @@ module.exports.string2Int32Buffer = function (s) {
 ///////////////  Jh /////////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -64152,7 +64152,7 @@ module.exports = methods;
 //////////////  Luffa ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -65072,7 +65072,7 @@ module.exports.xORTable = function(d, s1, s2, len) {
 ////////////  Shavite ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -65768,7 +65768,7 @@ module.exports = function(input, format, output) {
 //////////////  Simd ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Artax Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -66458,9 +66458,9 @@ function block(c, tweak, b, off) {
 }
 },{"./helper":268,"./op":272}],276:[function(require,module,exports){
 module.exports={
-  "name": "bitcore-lib-dash",
+  "name": "bitcore-lib-artax",
   "version": "0.15.2",
-  "description": "A pure and powerful JavaScript Dash library.",
+  "description": "A pure and powerful JavaScript Artax library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -66520,7 +66520,7 @@ module.exports={
     },
     {
       "name": "Jon Kindel",
-      "email": "jon@dash.org"
+      "email": "jon@artax.org"
     },
     {
       "name": "Alex Werner",
@@ -66528,7 +66528,7 @@ module.exports={
     }
   ],
   "keywords": [
-    "dash",
+    "artax",
     "transaction",
     "address",
     "p2p",
@@ -66545,12 +66545,12 @@ module.exports={
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/bitcore-lib-dash.git"
+    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax.git"
   },
   "bugs": {
-    "url": "https://github.com/dashevo/bitcore-lib-dash/issues"
+    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax/issues"
   },
-  "homepage": "https://github.com/dashevo/bitcore-lib-dash",
+  "homepage": "https://github.com/yoyaeArtax/bitcore-lib-artax",
   "browser": {
     "request": "browser-request"
   },
@@ -66565,7 +66565,7 @@ module.exports={
     "x11-hash-js": "^1.0.0"
   },
   "devDependencies": {
-    "bitcore-build-dash": "dashevo/bitcore-build-dash",
+    "bitcore-build-artax": "yoyaeArtax/bitcore-build-artax",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
@@ -66575,7 +66575,7 @@ module.exports={
   "license": "MIT"
 }
 
-},{}],"bitcore-lib-dash":[function(require,module,exports){
+},{}],"bitcore-lib-artax":[function(require,module,exports){
 (function (global,Buffer){
 'use strict';
 

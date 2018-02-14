@@ -1,7 +1,7 @@
 {
-  "name": "bitcore-lib-dash",
+  "name": "bitcore-lib-artax",
   "version": "0.15.2",
-  "description": "A pure and powerful JavaScript Dash library.",
+  "description": "A pure and powerful JavaScript Artax library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
@@ -61,7 +61,7 @@
     },
     {
       "name": "Jon Kindel",
-      "email": "jon@dash.org"
+      "email": "jon@artax.org"
     },
     {
       "name": "Alex Werner",
@@ -69,7 +69,7 @@
     }
   ],
   "keywords": [
-    "dash",
+    "artax",
     "transaction",
     "address",
     "p2p",
@@ -86,12 +86,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/bitcore-lib-dash.git"
+    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax.git"
   },
   "bugs": {
-    "url": "https://github.com/dashevo/bitcore-lib-dash/issues"
+    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax/issues"
   },
-  "homepage": "https://github.com/dashevo/bitcore-lib-dash",
+  "homepage": "https://github.com/yoyaeArtax/bitcore-lib-artax",
   "browser": {
     "request": "browser-request"
   },
@@ -106,7 +106,7 @@
     "x11-hash-js": "^1.0.0"
   },
   "devDependencies": {
-    "bitcore-build-dash": "dashevo/bitcore-build-dash",
+    "bitcore-build-artax": "yoyaeArtax/bitcore-build-artax",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
