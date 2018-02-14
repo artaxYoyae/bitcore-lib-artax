@@ -5054,7 +5054,7 @@ addNetwork({
     'dnsseed.darkcoin.io',
     'dnsseed.dashdot.io',
     'dnsseed.masternode.io',
-    'dnsseed.yoyaeArtax.io'
+    'dnsseed.artaxYoyae.io'
   ]
 });
 
@@ -25931,7 +25931,7 @@ module.exports={
   "_args": [
     [
       "elliptic@6.4.0",
-      "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax"
+      "/Users/awerner/GitHub/artaxYoyae/bitcore-lib-artax"
     ]
   ],
   "_development": true,
@@ -25956,7 +25956,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_spec": "6.4.0",
-  "_where": "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax",
+  "_where": "/Users/awerner/GitHub/artaxYoyae/bitcore-lib-artax",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -28300,7 +28300,7 @@ module.exports={
   "_args": [
     [
       "elliptic@6.4.0",
-      "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax"
+      "/Users/awerner/GitHub/artaxYoyae/bitcore-lib-artax"
     ]
   ],
   "_development": true,
@@ -28325,7 +28325,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
   "_spec": "6.4.0",
-  "_where": "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax",
+  "_where": "/Users/awerner/GitHub/artaxYoyae/bitcore-lib-artax",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -32466,7 +32466,7 @@ module.exports={
   "_args": [
     [
       "elliptic@3.0.3",
-      "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax"
+      "/Users/awerner/GitHub/artaxYoyae/bitcore-lib-artax"
     ]
   ],
   "_from": "elliptic@3.0.3",
@@ -32490,7 +32490,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-3.0.3.tgz",
   "_spec": "3.0.3",
-  "_where": "/Users/awerner/GitHub/yoyaeArtax/bitcore-lib-artax",
+  "_where": "/Users/awerner/GitHub/artaxYoyae/bitcore-lib-artax",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -66545,12 +66545,12 @@ module.exports={
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax.git"
+    "url": "https://github.com/artaxYoyae/bitcore-lib-artax.git"
   },
   "bugs": {
-    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax/issues"
+    "url": "https://github.com/artaxYoyae/bitcore-lib-artax/issues"
   },
-  "homepage": "https://github.com/yoyaeArtax/bitcore-lib-artax",
+  "homepage": "https://github.com/artaxYoyae/bitcore-lib-artax",
   "browser": {
     "request": "browser-request"
   },
@@ -66565,7 +66565,7 @@ module.exports={
     "x11-hash-js": "^1.0.0"
   },
   "devDependencies": {
-    "bitcore-build-artax": "yoyaeArtax/bitcore-build-artax",
+    "bitcore-build-artax": "artaxYoyae/bitcore-build-artax",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",

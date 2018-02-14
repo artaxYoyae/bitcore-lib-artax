@@ -86,12 +86,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax.git"
+    "url": "https://github.com/artaxYoyae/bitcore-lib-artax.git"
   },
   "bugs": {
-    "url": "https://github.com/yoyaeArtax/bitcore-lib-artax/issues"
+    "url": "https://github.com/artaxYoyae/bitcore-lib-artax/issues"
   },
-  "homepage": "https://github.com/yoyaeArtax/bitcore-lib-artax",
+  "homepage": "https://github.com/artaxYoyae/bitcore-lib-artax",
   "browser": {
     "request": "browser-request"
   },
@@ -106,7 +106,7 @@
     "x11-hash-js": "^1.0.0"
   },
   "devDependencies": {
-    "bitcore-build-artax": "yoyaeArtax/bitcore-build-artax",
+    "bitcore-build-artax": "artaxYoyae/bitcore-build-artax",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",

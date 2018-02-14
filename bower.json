@@ -2,7 +2,7 @@
   "name": "bitcore-lib-artax",
   "main": "./bitcore-lib-artax.min.js",
   "version": "0.15.2",
-  "homepage": "https://github.com/yoyaeArtax/bitcore-lib-artax",
+  "homepage": "https://github.com/artaxYoyae/bitcore-lib-artax",
   "authors": [
     "Artax", "BitPay, Inc."
   ],
