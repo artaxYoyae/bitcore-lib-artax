@@ -3493,7 +3493,7 @@ GovObject.prototype.fromString = function(string) {
 };
 
 /**
- * Retrieve a hexa string that can be used with dashd's CLI interface
+ * Retrieve a hexa string that can be used with artaxd's CLI interface
  *
  * @param {Object} opts allows to skip certain tests. {@see Transaction#serialize}
  * @return {string}
@@ -3621,7 +3621,7 @@ Proposal.prototype.dataHex = function() {
         url: this.url
     };
 
-    // screwy data shims 'til we can fix this on dashd
+    // screwy data shims 'til we can fix this on artaxd
     var inner = ['proposal', _govObj];
     var outer = [inner];
 
@@ -5043,18 +5043,21 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x4c,
-  privatekey: 0xcc,
-  scripthash: 0x10,
-  xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
-  xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
-  networkMagic: 0xbf0c6bbd,
+  pubkeyhash: 0x17,
+  privatekey: 0x97,
+  scripthash: 0x12,
+  xpubkey: 0x488B21E,    
+  xprivkey: 0x488ADE4,   
+  networkMagic: 0x352C4651,
   port: 21526,
   dnsSeeds: [
-    'dnsseed.darkcoin.io',
-    'dnsseed.dashdot.io',
-    'dnsseed.masternode.io',
-    'dnsseed.artaxYoyae.io'
+	'artax.online',
+    'pool.artax.online',
+    'electrum.artax.online',
+    'seed1.artax.live',
+    'seed2.artax.live',
+    'seed4.artax.live',
+    'electrum2.artax.online'
   ]
 });
 
@@ -5086,9 +5089,6 @@ var TESTNET = {
   PORT: 19999,
   NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xcee2caff),
   DNS_SEEDS: [
-    'testnet-seed.darkcoin.io',
-    'testnet-seed.dashdot.io',
-    'test.dnsseed.masternode.io'
   ]
 };
 
